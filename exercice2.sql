@@ -74,6 +74,7 @@ WHERE category.name != 'Horror'
   OR film.description LIKE '%zombie%' 
   OR film.description LIKE '%undead%');
   
+  
 -- For both the ‘general’ and the ‘safe’ lists above, also calculate the time in hours and days (not just minutes).
 
 SELECT SUM(f.length) AS total_viewing_time, 
